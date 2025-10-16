@@ -30,9 +30,7 @@ ul{
 }
 /* Chalenge 6: Change the background color of the div to blue, color of the text to white and the weight of the font to bold.*/
  div{
-  color:blue; font-weight:bold;
+ background-color:blue; font-weight:bold;color:white;
  }     
- p{
-  color:white;
- }
+ 
 /* Hint:  You can specify several CSS rules for one element by separating the rules with semi-colons. Look at some examples on w3schools */
