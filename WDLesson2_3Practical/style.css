@@ -5,7 +5,7 @@ img{
 }
 /* Challenge 5: Change the width of the image with an id of "banner" to 95% */
 #banner{
-    width: 95%;
+    width:95%;
 }
 /* Challenge 6: For the HTML element with an id of "bannerSeparator" change the,
                 1) height to 10px
