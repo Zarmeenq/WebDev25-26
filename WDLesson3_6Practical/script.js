@@ -21,3 +21,11 @@ function m(){
 }
 
 // Challenge 6:  Create the function for the BMI program.  Refer to the resource link in the HTML for assistance.
+
+function c(){
+    let h=parseFloat(document.getElementById("h").value);
+    let w=parseFloat(document.getElementById("w").value);
+    let op=document.getElementById("outpu");
+    let c=703* w/((h)**2);
+    op.innerHTML=`The BMI is ${c}`;
+}
