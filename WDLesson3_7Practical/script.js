@@ -25,7 +25,7 @@ function calcInterest(){
       let n=parseFloat(document.getElementById("n").value);
       let t=parseFloat(document.getElementById("t").value);
       let i= P*(Math.pow(1+(r/100)/n,n*t));
-      i=i.toFixed(2)
+      i=i.toFixed(2);
       let op=document.getElementById("outp");
       op.innerHTML=`Compound Interest is ${i} in the time period ${t} `;
       
