@@ -13,13 +13,55 @@ function name(){
 */
 
 /* Challenge 2:  Create the function for Challenge 1 scenario */
+function CalculateArea(){
+       let l = parseFloat(document.getElementById("l").value);
+       let w = parseFloat(document.getElementById("w").value);
+       let output = document.getElementById("output");
+       let message ="";
 
 
+if (l<=0 || w<=0){
+      message="Inappropriate measurement";
+}else{
+       let a= l * w;
+       message=a
+}
+output.innerHTML=`The area of the rectangle is ${message}`;
+}
 
 /* Challenge 3:  Complete the function for Pets Challenge on pets.html.  
 1) Review the HTML for the UI.  Remember dropdown boxes are just input.
 2) You will need to write HTML as part of the output.  
    For example, output.innerHTML = `<input src="pic.png">` would place the image in the <div>*/
 function pet(){
+      let a = document.getElementById("animal").value;
+      let e = document.getElementById("emotion").value;
+      let output = document.getElementById("output");
+      let img="";
 
+      if (a=="Bear" && e=="Funny"){
+            img="funnyBear.jpg";
+      }
+
+      if (a=="Bear" && e=="Sad"){
+            img="sadBear.jpg";
+      }
+
+      if (a=="Cat" && e=="Funny"){
+            img="funnyCat.jpg";
+      }
+
+      if (a=="Cat" && e=="Sad"){
+            img="sadCat.jpg";
+      }
+
+      if (a=="Dog" && e=="Funny"){
+            img="funnyDog.jpg";
+      }
+
+      if (a=="Dog" && e=="Sad"){
+            img="sadDog.jpg";
+      }
+
+      output.innerHTML=`<img src= "${img}">`;
 }
