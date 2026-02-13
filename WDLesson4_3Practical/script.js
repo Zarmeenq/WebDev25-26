@@ -34,6 +34,6 @@ function bmi(){
               status="ObeseWeight";
               filename="obeseweight.png";
        }
-       output.innerHTML=`You are ${status}<img src="${filename}">`;
+       output.innerHTML=`You are ${status}<br><img src="${filename}">`;
 
 }

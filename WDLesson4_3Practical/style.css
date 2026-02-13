@@ -45,7 +45,8 @@ html,body{
   text-align:center;
 }
 .card img{
-  width:100%;
+  width:300;
+  height: 300;
 }
 .highlight{
   font-style:italic;
