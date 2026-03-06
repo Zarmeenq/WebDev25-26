@@ -19,7 +19,7 @@ function calbalance(){
       let output=document.getElementById("output");
       let build="";
             for(let t=0; t<=years; t++){
-                let a= P*(1+r/100)**(n*t);
+                let a= P*(1+r/n)**(n*t);
                 build += ` Year ${t} : $ ${a.toFixed(2)}<br>`;
             }
       output.innerHTML= build;
