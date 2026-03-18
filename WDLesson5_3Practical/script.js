@@ -11,7 +11,25 @@
 */
 
 function balance(){
+        let output= document.getElementById("output");
+        let p= parseInt(document.getElementById("p").value);
+        let r= parseInt(document.getElementById("r").value);
+        let years= parseInt(document.getElementById("t").value);
+       
+///loop variable
+        let build = "";
+        build += `<table>
+                        <tr> <th>Years</th> <th>Balance</th> </tr>`;
 
+        for (let t=0; t<=years; t++){
+                let a= p * Math.pow(1 + (r/100),t);
+                build += `<tr>
+                                <td>${t}</td>
+                                <td>$ ${a.toFixed(2)}</td>
+                          </tr>`;
+        }
+        build +=`</table>`;
+        output.innerHTML = build;
 
 }
 
@@ -21,6 +39,6 @@ function balance(){
         3) Adjust the heading reflect the compound length.  Below are some typical lengths
               a. n = 1 then the interest is compounded yearly
               b. n = 12 then the interest is compounded monthly
-              c. n = 3 then the interest is compounded quarterly
+              c. n = 4 then the interest is compounded quarterly
               d. n = 2 then the interest is compounded bi-yearly
 */ 
