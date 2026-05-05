@@ -1,0 +1,94 @@
+html,body{
+  margin:0 auto;
+  font-family:Arial;
+}
+.container{
+  display:flex;
+  padding:10px;
+  background-color: rgb(130, 151, 72);
+}
+.center{
+  justify-content:center;
+  align-items:center;
+}
+
+nav{
+  background-color:maroon;
+}
+nav a{
+  color:black;
+  padding:10px;
+  flex:1;
+  text-decoration:none;
+  text-align:center;
+}
+nav a:hover{
+  color:white;
+}
+.subbanner{
+  background-color:rgb(226, 226, 91);
+}
+#banner{
+  background-color:maroon;
+  color:white;
+}
+#footer{
+  background-color:rgb(148, 192, 28);
+  color:white;
+  /*position:fixed;*/
+  left: 0;
+  right: 0;
+  bottom:0px;
+}
+ 
+.card{
+  flex:1;
+  margin:10px;
+  padding:10px;
+  border:1px solid gray;
+  text-align:center;
+}
+
+.highlight{
+  font-style:italic;
+  color:burlywood;
+}
+.heading{
+  font-weight:bold;
+}
+.button{
+  text-decoration:none;
+  background-color:rgb(121, 26, 26);
+  color:white;
+  border-radius:4px;
+  padding:6px;
+  box-shadow:2px 2px 2px black;
+}
+.button:hover{
+  background-color:rgb(148, 192, 28);
+}
+#output{
+  flex-wrap:wrap;
+}
+.fit{
+  width:150px;
+  height:150px;
+  object-fit:contain;
+}
+
+#leftPanel{
+  flex:1;
+}
+#rightPanel{
+  flex:2;
+}
+.fitted{
+  max-width:200px;
+  min-width:200px;
+}
+#result{
+  background-color: rgb(226, 226, 91);
+  color:red;
+  max-width: 200px;
+  font-size: 20px;
+}
