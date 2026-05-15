@@ -16,7 +16,7 @@ function card( cardInfo ){
                 <hr>
                 <p>Issued on: ${cardInfo.issue_date}</p>
                 <hr>
-                <p>${cardInfo.issuing }</p>
+                <p>${cardInfo.issuing_agency}</p>
             </div>`;
 
   return build;

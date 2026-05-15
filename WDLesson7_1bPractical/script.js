@@ -12,12 +12,25 @@ async function init(){
   let ct = 0;
 
   //Challenge 2: Test the function card() developed in Challenge 1 by displaying only the first violation to the webpage.
-
+  build += card(data[0]);
 
   //Challenge 3: Display all the violations to the web page using the function card().
-
+  for(let i = 0; i < data.length; i++){
+    build += card(data[i]);
+  }
  
   output.innerHTML = build;  
 }
 
 // Challenge 4: Create a function to filter the information and display only the cards that satisfy specfic condition(s).
+function filterViolations(cityName){
+  let build = "";
+
+  for(let i = 0; i < data.length; i++){
+    if(data[i].county === cityName){
+      build += card(data[i]);
+    }
+  }
+
+  output.innerHTML = build;
+}
